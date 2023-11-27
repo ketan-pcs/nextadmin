@@ -30,7 +30,7 @@ export const addUser = async (formData) => {
     await newUser.save();
   } catch (err) {
     console.log(err);
-    throw new Error("Failed to create user!");
+    // throw new Error("Failed to create user!");
   }
 
   revalidatePath("/dashboard/users");
